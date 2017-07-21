@@ -7,8 +7,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.4'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -54,6 +53,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :test do
+  gem "minitest-rails"
   gem 'minitest-snail'
 end
 
@@ -63,3 +63,4 @@ gem 'grape', '~> 1.0'
 gem 'grape-entity', '0.6.0'
 gem 'grape-swagger', '~> 0.27.3'
 gem 'grape-swagger-rails', '~> 0.3.0'
+gem "audited", "~> 4.5"
