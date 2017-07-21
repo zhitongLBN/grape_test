@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.4'
 # Use sqlite3 as the database for Active Record
@@ -58,7 +57,9 @@ group :test do
   gem 'minitest-snail'
 end
 
-
-
 gem 'pry-rails'
 gem 'trailblazer-rails', '~> 0.3.2'
+gem 'grape', '~> 1.0'
+gem 'grape-entity', '0.6.0'
+gem 'grape-swagger', '~> 0.27.3'
+gem 'grape-swagger-rails', '~> 0.3.0'
